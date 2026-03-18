@@ -1,0 +1,48 @@
+[project]
+name = "smarter-technologies-sort"
+version = "0.1"
+description = "Sort algorithm for Smarter Technologies application"
+authors = [{ name = "Thomas Olsen", email = "thomaserikolsen@gmail.com" }]
+requires-python = "~=3.12.0"
+readme = "README.md"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/thomaseolsen/smarter-technologies-sort"
+
+[dependency-groups]
+dev = ["pytest==9.0.2", "pytest-cov==7.0.0"]
+
+[tool.uv]
+index = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.mypy]
+pretty = true
+
+color_output = true
+
+show_column_numbers = true
+show_error_context = true
+show_error_codes = true
+
+# Warnings
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unreachable = true
+
+# Additional Checks
+check_untyped_defs = true
+no_implicit_optional = true
+strict_optional = true
+
+# Make sure we are using MyPy
+disallow_untyped_calls = true
+disallow_untyped_defs = true
