@@ -11,7 +11,7 @@ dependencies = []
 Repository = "https://github.com/thomaseolsen/smarter-technologies-sort"
 
 [dependency-groups]
-dev = ["pytest==9.0.2", "pytest-cov==7.0.0"]
+dev = ["pytest==9.0.3", "pytest-cov==7.0.0"]
 
 [tool.uv]
 index = []
